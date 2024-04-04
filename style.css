@@ -59,19 +59,55 @@
     border-radius: 12px;
     border: 1px solid var(--primary-700, #1DD100);
 }
-.all-ticket-section{
+
+.all-ticket-section {
     border-radius: 88px 88px 0px 0px;
-border-top: 2px solid var(--primary-700, #1DD100);
-background: #F7F8F8;
+    border-top: 2px solid var(--primary-700, #1DD100);
+    background: #F7F8F8;
 
 
-height: 2208px;
-flex-shrink: 0;
+    height: 2208px;
+    flex-shrink: 0;
 }
-.perSeat{
+
+.perSeat {
     width: 1170px;
-height: 418px;
-flex-shrink: 0;
-border-radius: 24px;
-background: var(--base-white, #FFF);
+    height: 418px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: var(--base-white, #FFF);
+}
+
+.sixty-percent-black {
+    color: var(--base-black, rgba(3, 7, 18, 0.60));
+}
+
+.seat-left {
+    width: 180px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: rgba(29, 209, 0, 0.15);
+}
+
+.route-size {
+    width: 808px;
+    height: 265px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: #F7F8F8;
+}
+
+.hr-1 {
+    width: 744px;
+    height: 1px;
+    background: rgba(3, 7, 18, 0.20);
+}
+
+.paribahan-card {
+    width: 232px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: rgba(3, 7, 18, 0.05);
 }
