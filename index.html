@@ -26,6 +26,9 @@
       font-family: "Inter", sans-serif;
       font-style: normal;
     }
+    .selected {
+    background-color: #1DD100; /* Parrot color for selected seats */
+  }
 
 
 
@@ -109,7 +112,7 @@
           <p class="text-white text-[1.125rem] inter font-normal">Yes, you can run unit tests and view the results
             directly within the app. The <br> <span class="block text-center">integrated testing features allow for a
               streamlined .</span></p>
-          <button class="bg-[#1DD100] text-[#030712] text-[1.25rem] raleway font-bold btn-ticket mt-8">Buy
+          <button onclick="scrollToSection('ticket-section')" class="bg-[#1DD100] text-[#030712] text-[1.25rem] raleway font-bold btn-ticket mt-8 hover:bg-slate-500">Buy
             Tickets</button>
         </div>
 
@@ -267,7 +270,7 @@
 
         </div>
         <!-- ticket-board -->
-        <div class="ticket-board  mt-7 px-8 py-8 flex justify-between">
+        <div id="ticket-section" class="ticket-board  mt-7 px-8 py-8 flex justify-between">
           <div class="seat-selection">
             <!-- Content for seat selection goes here -->
             <h1 class="text-black text-[1.5rem] raleway font-semibold">Select Your Seat</h1>
@@ -412,7 +415,7 @@
                       <svg xmlns="http://www.w3.org/2000/svg" width="23" height="13" viewBox="0 0 23 13" fill="none">
                         <rect width="23" height="13" rx="5" fill="#1DD100" />
                         <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white"
-                          font-size="8">2</text>
+                          font-size="8">0</text>
                       </svg>
 
                     </div>
@@ -420,10 +423,10 @@
                     <h1>Price</h1>
                   </div>
                   <hr class="bg-[#03071233] w-[350px] h-[1px] ml-8 border-dashed">
-                  <div class="grid grid-cols-3  px-8 gap-x-24 py-8 text-[#03071299] inter text-[1rem] font-normal">
-                    <h1>C2</h1>
-                    <h1>Economoy</h1>
-                    <h1>550</h1>
+                  <div id="info-n" class="grid grid-cols-1  px-8 gap-x-24 py-8 text-[#03071299] inter text-[1rem] font-normal diva">
+                    <h1 id="seat-no"></h1>
+                    <h1 id="seat-class"></h1>
+                    <h1 id="per-seat-price"></h1>
 
                   </div>
 
@@ -431,17 +434,17 @@
                     <hr class="w-[369px] h-[1px] ml-8 bg-[#03071233]">
                     <div class="flex justify-between mx-8 mt-4 inter text-black text-[1rem] font-medium">
                       <h1>Total Price</h1>
-                      <h1>BDT 1100</h1>
+                      <h1 id="total-price">BDT 0</h1>
                     </div>
                     <label class="input input-bordered flex items-center gap-2 mx-8 mt-4">
-                      <input type="text" class="grow h-14" placeholder="Have any copupon?" />
-                      <button class="btn-cupon text-white inter text-[1rem] font-semibold">Apply</button>
+                      <input id="cupon-code" type="text" class="grow h-14" placeholder="Have any coupon?" />
+                      <button class="btn-cupon text-white inter text-[1rem] font-semibold hover:bg-slate-500">Apply</button>
                     </label>
 
                   </div>
                   <div class="flex justify-between mx-8 mt-6 text-[1rem] inter font-medium text-black ">
                     <h1>Grand Total</h1>
-                    <h1>BDT 1100</h1>
+                    <h1 id="grand-total">BDT 0</h1>
                   </div>
 
                 </div>
@@ -467,6 +470,31 @@
     </section>
 
   </main>
+  <footer>
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+      <aside>
+        <h2 class="text-3xl font-bold my-3">SKYLINK Express</h2>
+        <p>SKYLINK Express is now digital platform to make your<br>daily commuting better</p>
+      </aside> 
+      <nav class="ml-60">
+        <h6 class="footer-title">Download our app</h6> 
+        <div class="grid grid-flow-col gap-4">
+          <a class="flex gap-3 font-bold"><img src="images/playstore.png" alt=""><p class="text-xl text-white-100">Google Play</p></a>
+        </div>
+      </nav>
+    </footer>
+    <footer class="footer items-center p-4 bg-neutral text-neutral-content">
+      <aside class="items-center grid-flow-col ml-7"> 
+        <p>Copyright © 2024 - All right reserved</p>
+      </aside> 
+      <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end mr-40">
+        <a>Terms & condition</a>
+        <a>Return & refund policy</a>
+        <a>Privacy policy</a>
+      </nav>
+    </footer>
+  </footer>
+  <script src="test.js"></script>
 </body>
 
 </html>

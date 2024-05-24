@@ -141,3 +141,16 @@
     border-radius: 8px;
     background: var(--primary-700, #1DD100);
 }
+
+
+.seat-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 0.5rem; /* Adjust as needed for spacing between rows */
+  }
+  
+  .seat-info {
+    /* Additional styling for each cell if needed */
+  }
+  
