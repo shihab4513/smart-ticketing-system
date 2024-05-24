@@ -26,6 +26,28 @@
       font-family: "Inter", sans-serif;
       font-style: normal;
     }
+
+
+
+    .seat-selection {
+      width: 48%;
+      /* Adjust the width as necessary */
+    }
+
+    .divider {
+      /* border-right: 2px dashed #ccc; */
+      margin: 0 2rem;
+    }
+
+    .seat-status,
+    .wheelchair-seat,
+    .seats {
+      margin-bottom: 1rem;
+    }
+
+    .pay-box {
+      /* Add payment box styling */
+    }
   </style>
 </head>
 
@@ -244,6 +266,201 @@
           </div>
 
         </div>
+        <!-- ticket-board -->
+        <div class="ticket-board  mt-7 px-8 py-8 flex justify-between">
+          <div class="seat-selection">
+            <!-- Content for seat selection goes here -->
+            <h1 class="text-black text-[1.5rem] raleway font-semibold">Select Your Seat</h1>
+            <div>
+              <div class="flex justify-between mb-4">
+                <div class="flex">
+                  <img src="images/seat-gray.png" alt>
+                  <p>Available</p>
+                </div>
+                <div class="flex">
+                  <img src="images/seat-green-filled.png" alt>
+                  <p>Selected</p>
+                </div>
+
+              </div>
+              <div class="flex gap-8 mb-6 justify-end">
+                <button id="A4" class="sit btn w-28 h-20"><img src="images/steering.svg" alt=""></button>
+              </div>
+              <div class="grid grid-cols-2 gap-16">
+                <div class="flex gap-8 mb-6">
+                  <button id="A1" class="sit btn w-28 h-14">A1</button>
+                  <button id="A2" class="sit btn w-28 h-14">A2</button>
+                </div>
+                <div class="flex gap-8 mb-6">
+                  <button id="A3" class="sit btn w-28 h-14">A3</button>
+                  <button id="A4" class="sit btn w-28 h-14">A4</button>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-16">
+                <div class="flex gap-8 mb-6">
+                  <button id="B1" class="sit btn w-28 h-14">B1</button>
+                  <button id="B2" class="sit btn w-28 h-14">B2</button>
+                </div>
+                <div class="flex gap-8 mb-6">
+                  <button id="B3" class="sit btn w-28 h-14">B3</button>
+                  <button id="B4" class="sit btn w-28 h-14">B4</button>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-16">
+                <div class="flex gap-8 mb-6">
+                  <button id="B1" class="sit btn w-28 h-14">C1</button>
+                  <button id="B2" class="sit btn w-28 h-14">C2</button>
+                </div>
+                <div class="flex gap-8 mb-6">
+                  <button id="B3" class="sit btn w-28 h-14">C3</button>
+                  <button id="B4" class="sit btn w-28 h-14">C4</button>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-16">
+                <div class="flex gap-8 mb-6">
+                  <button id="B1" class="sit btn w-28 h-14">D1</button>
+                  <button id="B2" class="sit btn w-28 h-14">D2</button>
+                </div>
+                <div class="flex gap-8 mb-6">
+                  <button id="B3" class="sit btn w-28 h-14">D3</button>
+                  <button id="B4" class="sit btn w-28 h-14">D4</button>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-16">
+                <div class="flex gap-8 mb-6">
+                  <button id="B1" class="sit btn w-28 h-14">E1</button>
+                  <button id="B2" class="sit btn w-28 h-14">E2</button>
+                </div>
+                <div class="flex gap-8 mb-6">
+                  <button id="B3" class="sit btn w-28 h-14">E3</button>
+                  <button id="B4" class="sit btn w-28 h-14">E4</button>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-16">
+                <div class="flex gap-8 mb-6">
+                  <button id="B1" class="sit btn w-28 h-14">F1</button>
+                  <button id="B2" class="sit btn w-28 h-14">F2</button>
+                </div>
+                <div class="flex gap-8 mb-6">
+                  <button id="B3" class="sit btn w-28 h-14">F3</button>
+                  <button id="B4" class="sit btn w-28 h-14">F4</button>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-16">
+                <div class="flex gap-8 mb-6">
+                  <button id="B1" class="sit btn w-28 h-14">G1</button>
+                  <button id="B2" class="sit btn w-28 h-14">G2</button>
+                </div>
+                <div class="flex gap-8 mb-6">
+                  <button id="B3" class="sit btn w-28 h-14">G3</button>
+                  <button id="B4" class="sit btn w-28 h-14">G4</button>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-16">
+                <div class="flex gap-8 mb-6">
+                  <button id="B1" class="sit btn w-28 h-14">H1</button>
+                  <button id="B2" class="sit btn w-28 h-14">H2</button>
+                </div>
+                <div class="flex gap-8 mb-6">
+                  <button id="B3" class="sit btn w-28 h-14">H3</button>
+                  <button id="B4" class="sit btn w-28 h-14">H4</button>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-16">
+                <div class="flex gap-8 mb-6">
+                  <button id="B1" class="sit btn w-28 h-14">I1</button>
+                  <button id="B2" class="sit btn w-28 h-14">I2</button>
+                </div>
+                <div class="flex gap-8 mb-6">
+                  <button id="B3" class="sit btn w-28 h-14">I3</button>
+                  <button id="B4" class="sit btn w-28 h-14">I4</button>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-16">
+                <div class="flex gap-8 mb-6">
+                  <button id="B1" class="sit btn w-28 h-14">J1</button>
+                  <button id="B2" class="sit btn w-28 h-14">J2</button>
+                </div>
+                <div class="flex gap-8 mb-6">
+                  <button id="B3" class="sit btn w-28 h-14">J3</button>
+                  <button id="B4" class="sit btn w-28 h-14">J4</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Divider -->
+          <!-- <div class="divider">
+
+
+          </div> -->
+
+          <!-- Payment Summary Section -->
+          <div class="payment-summary">
+            <!-- Content for payment summary goes here -->
+            <div class=" ml-8 mt-8">
+
+              <div>
+                <h1 class="text-black text-[1.5rem] raleway font-semibold ">Select Your Seat</h1>
+                <hr class="hr-2 my-6 border-dashed">
+                <div class="pay-box">
+                  <div class="inter text-[1rem] font-medium text-black grid grid-cols-3 px-8 gap-x-24 py-8">
+
+                    <div class="flex items-center gap-1">
+                      <h1>Seat</h1>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="13" viewBox="0 0 23 13" fill="none">
+                        <rect width="23" height="13" rx="5" fill="#1DD100" />
+                        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white"
+                          font-size="8">2</text>
+                      </svg>
+
+                    </div>
+                    <h1>Class</h1>
+                    <h1>Price</h1>
+                  </div>
+                  <hr class="bg-[#03071233] w-[350px] h-[1px] ml-8 border-dashed">
+                  <div class="grid grid-cols-3  px-8 gap-x-24 py-8 text-[#03071299] inter text-[1rem] font-normal">
+                    <h1>C2</h1>
+                    <h1>Economoy</h1>
+                    <h1>550</h1>
+
+                  </div>
+
+                  <div>
+                    <hr class="w-[369px] h-[1px] ml-8 bg-[#03071233]">
+                    <div class="flex justify-between mx-8 mt-4 inter text-black text-[1rem] font-medium">
+                      <h1>Total Price</h1>
+                      <h1>BDT 1100</h1>
+                    </div>
+                    <label class="input input-bordered flex items-center gap-2 mx-8 mt-4">
+                      <input type="text" class="grow h-14" placeholder="Have any copupon?" />
+                      <button class="btn-cupon text-white inter text-[1rem] font-semibold">Apply</button>
+                    </label>
+
+                  </div>
+                  <div class="flex justify-between mx-8 mt-6 text-[1rem] inter font-medium text-black ">
+                    <h1>Grand Total</h1>
+                    <h1>BDT 1100</h1>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
 
 
       </div>
